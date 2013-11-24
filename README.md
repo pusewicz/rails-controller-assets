@@ -1,6 +1,7 @@
 # RailsControllerAssets
 
 [![Build Status](https://travis-ci.org/pusewicz/rails-controller-assets.png?branch=master)](https://travis-ci.org/pusewicz/rails-controller-assets)
+[![Code Climate](https://codeclimate.com/github/pusewicz/rails-controller-assets.png)](https://codeclimate.com/github/pusewicz/rails-controller-assets)
 
 This gems allows to automatically precompile bundles of assets per controller or controller/action pair.
 
