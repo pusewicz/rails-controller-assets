@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/pusewicz/rails-controller-assets"
   s.summary     = "Rails per controller assets"
   s.description = "Precompiles bundles of assets per controller or controller/action pair."
+  s.license     = 'MIT'
 
   s.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
