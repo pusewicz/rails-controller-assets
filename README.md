@@ -1,5 +1,7 @@
 # RailsControllerAssets
 
+[![Build Status](https://travis-ci.org/pusewicz/rails-controller-assets.png?branch=master)](https://travis-ci.org/pusewicz/rails-controller-assets)
+
 This gems allows to automatically precompile bundles of assets per controller or controller/action pair.
 
 It's great when you want to keep action or controller specific CSS/JavaScript in a separate file.
