@@ -34,11 +34,6 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     builder (3.1.4)
-    byebug (2.3.1)
-      columnize (~> 0.3.6)
-      debugger-linecache (~> 1.2.0)
-    columnize (0.3.6)
-    debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     hike (1.2.3)
@@ -106,7 +101,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug
   rails-controller-assets!
   rspec-rails (~> 3.0.0.beta1)
   sprockets-rails
