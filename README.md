@@ -36,3 +36,7 @@ The gem will look for bundle files that match:
 
 * `{controller_name}.{js|css}`
 * `{controller_name}_{action_name}.{js|css}`
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pusewicz/rails-controller-assets/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
