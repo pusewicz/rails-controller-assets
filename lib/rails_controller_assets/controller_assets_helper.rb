@@ -35,7 +35,6 @@ module RailsControllerAssets
     end
 
     def controller_asset?(type)
-      Rails.application.assets.find_asset(controller_asset(type))
       asset_exists? controller_asset(type)
     end
 
