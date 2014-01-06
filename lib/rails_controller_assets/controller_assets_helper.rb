@@ -75,7 +75,7 @@ module RailsControllerAssets
     end
 
     def skip_controller_stylesheet!
-      stylesheet_bundles.delete(controller_stylesheet)
+      controller_stylesheets.delete(controller_stylesheet)
     end
   end
 end
