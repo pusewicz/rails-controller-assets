@@ -2,12 +2,7 @@ module RailsControllerAssets
   class Precompiler
     def call(asset, filename)
       return false unless filename =~ /\/app\/assets/
-      if include?(asset)
-        puts "Including #{asset}"
-        true
-      else
-        false
-      end
+      include?(asset)
     end
 
     def arity
