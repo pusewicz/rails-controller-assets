@@ -36,10 +36,19 @@ module RailsControllerAssets
 
     def controller_asset?(type)
       Rails.application.assets.find_asset(controller_asset(type))
+      asset_exists? controller_asset(type)
     end
 
     def controller_and_action_asset?(type)
-      Rails.application.assets.find_asset(controller_and_action_asset(type))
+      asset_exists? controller_and_action_asset(type)
+    end
+
+    def asset_exists?(asset)
+      Rails.application.assets.find_asset(asset).tap do |found|
+        if Rails.env.development?
+          Rails.logger.info "  \e[1m\e[33m[RailsControllerAssets]\e[0m Asset `#{asset}' was #{'not ' unless found}found"
+        end
+      end
     end
 
     def controller_asset(type)
