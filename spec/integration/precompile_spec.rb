@@ -1,21 +1,21 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe 'Precompiling assets' do
-  let(:posts_stylesheets) {
-    Dir[Rails.root.join("public/assets/posts-*.css")]
-  }
+RSpec.describe 'Precompiling assets' do
+  let(:posts_stylesheets) do
+    Dir[Rails.root.join('public/assets/posts-*.css')]
+  end
 
-  let(:posts_javascripts) {
-    Dir[Rails.root.join("public/assets/posts-*.js")]
-  }
+  let(:posts_javascripts) do
+    Dir[Rails.root.join('public/assets/posts-*.js')]
+  end
 
-  let(:comments_stylesheets) {
-    Dir[Rails.root.join("public/assets/comments_index-*.css")]
-  }
+  let(:comments_stylesheets) do
+    Dir[Rails.root.join('public/assets/comments_index-*.css')]
+  end
 
-  let(:comments_javascripts) {
-    Dir[Rails.root.join("public/assets/comments_index-*.js")]
-  }
+  let(:comments_javascripts) do
+    Dir[Rails.root.join('public/assets/comments_index-*.js')]
+  end
 
   before(:all) do
     task = Sprockets::Rails::Task.new(Rails.application)

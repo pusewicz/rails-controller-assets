@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rails-controller-assets (0.1.0)
-      rails (~> 4.1.4)
+      rails (>= 4.0, < 4.2)
 
 GEM
   remote: https://rubygems.org/
