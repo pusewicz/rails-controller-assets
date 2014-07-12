@@ -26,7 +26,7 @@ In `app/assets/stylesheets/posts.css`:
 In your application layout add to your stylesheets definition:
 
 ```erb
-<%= stylesheets_link_tag 'application', *controller_stylesheets %>
+<%= stylesheet_link_tag 'application', *controller_stylesheets %>
 <%= javascript_include_tag 'application', *controller_javascripts %>
 ```
 
