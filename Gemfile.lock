@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-controller-assets (0.1.0)
+    rails-controller-assets (0.1.1)
       rails (>= 4.0, < 4.2)
 
 GEM
