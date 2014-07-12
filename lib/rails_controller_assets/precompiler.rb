@@ -1,7 +1,7 @@
 module RailsControllerAssets
   class Precompiler
     def call(asset, filename)
-      return false unless filename =~ /\/app\/assets/
+      return false unless filename =~ %r{/app/assets}
       include?(asset)
     end
 
