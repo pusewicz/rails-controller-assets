@@ -2,11 +2,12 @@ require 'rails_controller_assets/precompiler'
 require 'rails_controller_assets/controller_assets_helper'
 
 module RailsControllerAssets
+  # Rails engine definition class
   class Engine < ::Rails::Engine
-    config.assets.precompile << RailsControllerAssets::Precompiler.new
+    config.assets.precompile << Precompiler.new
 
     config.to_prepare do
-      ApplicationController.helper(RailsControllerAssets::ControllerAssetsHelper)
+      ApplicationController.helper(ControllerAssetsHelper)
     end
   end
 end

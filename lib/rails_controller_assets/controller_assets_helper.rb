@@ -1,4 +1,5 @@
 module RailsControllerAssets
+  # ActionView helper methods module
   module ControllerAssetsHelper
     def controller_stylesheets
       styles = []

@@ -1,4 +1,5 @@
 module RailsControllerAssets
+  # Precompiler class responsible for filtering of the files
   class Precompiler
     def call(asset, filename)
       return false unless filename =~ %r{/app/assets}
@@ -52,9 +53,7 @@ module RailsControllerAssets
     end
 
     def find_controller_paths
-      controllers.map do |controller|
-        controller.controller_path
-      end
+      controllers.map(&:controller_path)
     end
   end
 end
