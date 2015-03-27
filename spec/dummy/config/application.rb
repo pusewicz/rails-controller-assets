@@ -11,4 +11,3 @@ module Dummy
     config.assets.digest = false
   end
 end
-
