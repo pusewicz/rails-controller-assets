@@ -45,7 +45,7 @@ GEM
     mime-types (2.4.3)
     minitest (5.5.1)
     multi_json (1.11.0)
-    rack (1.5.2)
+    rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.1.10)
